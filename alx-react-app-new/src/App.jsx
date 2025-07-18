@@ -10,6 +10,10 @@ import Button from './components/buttonstyle'
 import ButtonIn from './components/inlinebutttonstyle'
 import Counter from './components/stateusage'
 import ExampleComponent from './components/usestatehooks'
+import Counter from './components/Counter'
+
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +23,7 @@ function App() {
       <WelcomeMessage /> 
       <Button />
       <Header />
+      <Counter />
       <MainContent />
       <ButtonIn />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />

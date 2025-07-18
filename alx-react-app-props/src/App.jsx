@@ -8,12 +8,8 @@ import UserProfile from './components/UserProfile'
 import Footer from './components/Footer'
 import Button from './components/buttonstyle'
 import ButtonIn from './components/inlinebutttonstyle'
-import Counters from './components/stateusage'
+import Counter from './components/stateusage'
 import ExampleComponent from './components/usestatehooks'
-import Counter from './components/Counter'
-
-
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,10 +20,9 @@ function App() {
       <Button />
       <Header />
       <MainContent />
-       <Counter />
       <ButtonIn />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
-      <Counters />
+      <Counter />
       <ExampleComponent />
       <Footer />
     </>

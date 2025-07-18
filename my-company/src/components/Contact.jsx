@@ -17,9 +17,10 @@ import { useState } from 'react';
      };
 
      return (
-       <div style={{ padding: '20px' }}>
+       <div style={{ width: '100%',padding:'10px 20px 40px 20px', backgroundColor: 'white', textAlign: 'center',color : 'black', }}>
          <h1>Contact Us</h1>
          <form onSubmit={handleSubmit}>
+            
            <input
              type="text"
              name="name"
@@ -41,7 +42,7 @@ import { useState } from 'react';
              placeholder="Your Message"
              value={formData.message}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0' }}
+             style={{ display: 'block', margin: '10px 0', }}
            />
            <button type="submit">Send Message</button>
          </form>

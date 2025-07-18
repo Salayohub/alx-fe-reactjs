@@ -16,8 +16,9 @@ function Navbar() {
 // Optional inline styles
 const styles = {
   nav: {
+    width:'100%',
     backgroundColor: "#f0f0f0",
-    padding: "10px",
+    padding: "10px 20px 10px 20px",
   },
   ul: {
     listStyle: "none",

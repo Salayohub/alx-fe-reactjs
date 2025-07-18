@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
 function App() {
-  return (
+  return (<div>
     <BrowserRouter>
     <Navbar />
       <Routes>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 

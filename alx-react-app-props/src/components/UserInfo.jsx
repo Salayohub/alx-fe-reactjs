@@ -1,7 +1,7 @@
 import UserDetails from './UserDetails';
 
 function UserInfo() {
-  return <UserDetails />;
+  return <UserInfo />;
 }
 
 export default UserInfo;

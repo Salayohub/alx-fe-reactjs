@@ -19,7 +19,7 @@ const styles = {
     width:'100%',
     backgroundColor: "#f0f0f0",
     padding: "10px 20px 10px 20px",
-    alignContent: 'center'
+    justifyContent: 'center'
   },
   ul: {
     listStyle: "none",

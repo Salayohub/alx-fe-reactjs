@@ -1,10 +1,12 @@
 function Header() {
   const headerstyle = {
+    backgroundColor: 'navy',
     marginTop: '25px',
-    color: 'red',
+    color: 'white',
     fontSize: '25px',
     border: '2px dotted yellow',
-    borderRadius: '10px'
+    borderRadius: '10px',
+    textAlign: 'center'
   }
 return(
 <header style={headerstyle}>

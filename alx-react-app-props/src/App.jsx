@@ -1,32 +1,15 @@
-import { useState } from 'react'
+import ProfilePage from './components/ProfilePage';
+import UserContext from './UserContext'; // import the context
 
-import './App.css'
-import WelcomeMessage from './components/WelcomeMessage'
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import UserProfile from './components/UserProfile'
-import Footer from './components/Footer'
-import Button from './components/buttonstyle'
-import ButtonIn from './components/inlinebutttonstyle'
-import Counter from './components/stateusage'
-import ExampleComponent from './components/usestatehooks'
 function App() {
-  const [count, setCount] = useState(0)
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
-    <>
-      
-      <WelcomeMessage /> 
-      <Button />
-      <Header />
-      <MainContent />
-      <ButtonIn />
-      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
-      <Counter />
-      <ExampleComponent />
-      <Footer />
-    </>
-  )
+    // Wrap your app in the Provider and pass userData to it
+    <UserContext.Provider value={userData}>
+      <ProfilePage />
+    </UserContext.Provider>
+  );
 }
 
-export default App
+export default App;

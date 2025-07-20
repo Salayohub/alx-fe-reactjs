@@ -17,17 +17,18 @@ import { useState } from 'react';
      };
 
      return (
-       <div style={{ width: '100%',padding:'10px 20px 40px 20px', backgroundColor: 'white', textAlign: 'center',color : 'black', }}>
+       <div style={{ height: '100vh',padding:'10px 20px 40px 20px', backgroundColor: 'white', textAlign: 'center',color : 'black', }}>
          <h1>Contact Us</h1>
          <form onSubmit={handleSubmit}>
             
            <input
              type="text"
              name="name"
+             
              placeholder="Your Name"
              value={formData.name}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0' }}
+             style={{ display: 'block', margin: '10px 0',padding: '7px', }}
            />
            <input
              type="email"
@@ -35,16 +36,16 @@ import { useState } from 'react';
              placeholder="Your Email"
              value={formData.email}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0' }}
+             style={{ display: 'block', margin: '10px 0',padding: '7px', }}
            />
            <textarea
              name="message"
              placeholder="Your Message"
              value={formData.message}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0', }}
+             style={{ display: 'block', margin: '10px 0',padding: '27px', }}
            />
-           <button type="submit">Send Message</button>
+           <button type="submit" style={{display: 'flex', backgroundColor: 'blue'}}>Send Message</button>
          </form>
        </div>
      );

@@ -5,6 +5,8 @@ import DeleteRecipeButton from './DeleteRecipeButton'
 
 const RecipeList = () => {
   const filteredRecipes = useRecipeStore((state) => state.filteredRecipes)
+  const addFavorite = useRecipeStore((state) => state.addFavorite)
+
 
   if (filteredRecipes.length === 0)
     return <p>No recipes match your search. Try a different keyword.</p>
@@ -16,6 +18,7 @@ const RecipeList = () => {
         <div key={recipe.id} style={{ marginBottom: '1rem' }}>
           <Link to={`/recipe/${recipe.id}`}>
             <h3>{recipe.title}</h3>
+            <button onClick={() => addFavorite(recipe)}>❤️ Favorite</button>
           </Link>
           <DeleteRecipeButton id={recipe.id} />
         </div>

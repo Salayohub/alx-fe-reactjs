@@ -13,5 +13,10 @@ export const searchGitHubUsers = async ({ username, location, minRepos }) => {
   }
 
   const response = await axios.get(`https://api.github.com/search/users?q=${query}`);
-  return response.data.items; // 'items' is an array of user objects
+  return response.data.items; // list of users
+};
+
+export const fetchUserData = async (username) => {
+  const response = await axios.get(`https://api.github.com/users/${username}`);
+  return response.data; // single user object
 };

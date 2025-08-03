@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import UserRepos from './components/UserRepos';
+import UserRepos from './components/Search';
 
 function App() {
   const [username, setUsername] = useState('');

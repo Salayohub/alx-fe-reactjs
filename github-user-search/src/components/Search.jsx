@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchUserRepos } from '../services/github';
+import { fetchUserRepos } from '../services/githubService';
 
 const UserRepos = ({ username }) => {
   const [repos, setRepos] = useState([]);

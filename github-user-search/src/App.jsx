@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Search from './components/Search';
 import { fetchUserData } from './services/githubService';
+import Paragraph from './components/paragraph';
 
 const App = () => {
   const [repos, setRepos] = useState([]);
@@ -31,6 +32,13 @@ const App = () => {
           </li>
         ))}
       </ul>
+
+     <div className="">
+      <div className="">
+        <h1 className="text-2xl font-bold mb-4 ">Welcome to My Tailwind App</h1>
+        <Paragraph />
+      </div>
+    </div>
       
     </div>
   );

@@ -1,20 +1,13 @@
-const GITHUB_API_KEY = import.meta.env.VITE_APP_GITHUB_API_KEY;
+// src/services/githubService.js
+import axios from 'axios'; // ✅ axios
 
-export const fetchUserRepos = async (username) => {
+export const fetchUserData = async (username) => {
+  const url = `https://api.github.com/users/${username}/repos`; // or /users/${username}
   try {
-    const response = await fetch(`https://api.github.com/users/${username}/repos`, {
-      headers: {
-        Authorization: `token ${GITHUB_API_KEY}`,
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.status}`);
-    }
-
-    return await response.json();
+    const response = await axios.get(url); // ✅ axios.get
+    return response.data;
   } catch (error) {
-    console.error("Error fetching GitHub repos:", error);
-    return [];
+    console.error('Error fetching GitHub data:', error);
+    throw error;
   }
 };

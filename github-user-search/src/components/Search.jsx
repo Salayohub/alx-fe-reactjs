@@ -1,36 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { fetchUserRepos } from '../services/githubService';
+// src/components/Search.jsx
+import React, { useState } from 'react';
 
-const UserRepos = ({ username }) => {
-  const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(true);
+const Search = ({ onSearch }) => {
+  const [username, setUsername] = useState('');
 
-  useEffect(() => {
-    const getRepos = async () => {
-      const data = await fetchUserRepos(username);
-      setRepos(data);
-      setLoading(false);
-    };
-
-    getRepos();
-  }, [username]);
-
-  if (loading) return <p>Loading...</p>;
+  const handleSubmit = (e) => {
+    e.preventDefault(); // ✅ preventDefault
+    if (username.trim()) {
+      onSearch(username); // Call parent function
+    }
+  };
 
   return (
-    <div>
-      <h2>Repositories for {username}</h2>
-      <ul>
-        {repos.map((repo) => (
-          <li key={repo.id}>
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-              {repo.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <form onSubmit={handleSubmit}> {/* ✅ form and onSubmit */}
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)} // ✅ target.value
+        placeholder="Enter GitHub username"
+      />
+      <button type="submit">Search</button> {/* ✅ button */}
+    </form>
   );
 };
 
-export default UserRepos;
+export default Search;

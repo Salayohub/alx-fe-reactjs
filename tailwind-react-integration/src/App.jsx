@@ -1,12 +1,13 @@
-import { useState } from 'react'
-
+import react from 'react'
+import UserProfile from './components/ UserProfile '
 
 function App() {
   
 
   return (
     <>
-     <p className='text-5xl bg-amber-200'>hello world</p> 
+    
+     <UserProfile /> 
     </>
   )
 }

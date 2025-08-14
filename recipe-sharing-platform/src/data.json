@@ -1,74 +1,276 @@
 [
-   {
+  {
     "id": 1,
-    "title": "Buka Stew",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/pepper stew.svg"
+    "title": "Buka Stew Recipe",
+    "summary": "Buka stew is a rich, smoky Nigerian tomato-based sauce served in roadside eateries (‘bukas’). Slow-cooked in palm oil with assorted meats, it’s perfect with rice, beans, yam, or plantain.",
+    "image": "buka-stew.svg",
+    "ingredients": [
+      "10 large ripe tomatoes",
+      "4 red bell peppers (tatashe)",
+      "2 scotch bonnet peppers (ata rodo)",
+      "2 medium onions",
+      "1 cup palm oil",
+      "2 tbsp ground crayfish (optional)",
+      "2 seasoning cubes",
+      "1 tsp salt (to taste)",
+      "500g assorted meat (beef, shaki, cow skin)",
+      "1 tsp dried thyme"
+    ],
+    "instructions": [
+      "Boil blended tomatoes, peppers, and half the onions until thick.",
+      "Heat palm oil until slightly bleached.",
+      "Fry sliced onions in the oil, then add boiled pepper mix.",
+      "Fry for 20–30 minutes, stirring occasionally.",
+      "Add cooked meat, stock, crayfish, seasoning cubes, thyme, and salt.",
+      "Simmer for another 15 minutes until oil floats."
+    ]
   },
   {
     "id": 2,
     "title": "Nigerian Fish Stew",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/fish stew.svg"
+    "summary": "A hearty Nigerian stew made with fresh or fried fish simmered in spicy tomato sauce. Commonly paired with rice, yam, or plantain.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "6 medium fish steaks (tilapia, catfish, or mackerel)",
+      "8 tomatoes",
+      "3 red bell peppers",
+      "2 scotch bonnet peppers",
+      "2 medium onions",
+      "½ cup vegetable oil",
+      "1 tsp curry powder",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Season fish with salt, pepper, and one seasoning cube. Fry lightly or grill.",
+      "Blend tomatoes, peppers, and onions, then boil until thick.",
+      "Heat oil, add chopped onions, and fry the boiled pepper mix.",
+      "Add curry, seasoning cubes, and salt.",
+      "Add fish and cook gently for 10–15 minutes to avoid breaking fish."
+    ]
   },
   {
     "id": 3,
-    "title": "Efo Riro",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/eforiro.svg"
+    "title": "Efo Riro Recipe",
+    "summary": "Efo Riro is a Yoruba-style spinach stew made with pepper sauce, assorted meats, and sometimes stockfish. Best served with pounded yam or rice.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "500g spinach (or ugu leaves)",
+      "6 tomatoes",
+      "4 red bell peppers",
+      "2 scotch bonnet peppers",
+      "2 medium onions",
+      "½ cup palm oil",
+      "500g assorted meats",
+      "2 tbsp ground crayfish",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend tomatoes, peppers, and 1 onion, then boil until thick.",
+      "Heat palm oil, add sliced onions, and fry boiled pepper mix.",
+      "Add meats, crayfish, seasoning, and salt. Simmer for 10 minutes.",
+      "Stir in spinach, cook for 3–5 minutes, and remove from heat."
+    ]
   },
   {
     "id": 4,
     "title": "Party Jollof Rice",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/party jollof.svg"
+    "summary": "A smoky, rich Nigerian rice dish cooked in tomato-pepper sauce — a must-have at parties.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "4 cups long-grain parboiled rice",
+      "6 tomatoes",
+      "4 red bell peppers",
+      "2 scotch bonnet peppers",
+      "2 onions",
+      "½ cup vegetable oil",
+      "4 cups chicken stock",
+      "2 tbsp tomato paste",
+      "2 tsp curry powder",
+      "2 tsp thyme",
+      "3 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend peppers, tomatoes, and 1 onion; boil until thick.",
+      "Heat oil, fry onions and tomato paste, then add pepper mix.",
+      "Add curry, thyme, stock, seasoning cubes, and salt.",
+      "Add rice, cover tightly, and cook on low heat.",
+      "Stir occasionally until rice is cooked and slightly smoky."
+    ]
   },
   {
     "id": 5,
-    "title": "Meat Pie",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/meatpie.svg"
+    "title": "Meat Pie Recipe",
+    "summary": "Flaky Nigerian pastry filled with minced beef, potatoes, and carrots — perfect as a snack or light meal.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "500g all-purpose flour",
+      "250g margarine or butter",
+      "1 tsp baking powder",
+      "½ tsp salt",
+      "1 cup cold water",
+      "300g minced beef",
+      "1 potato (diced)",
+      "1 carrot (diced)",
+      "1 onion (chopped)",
+      "1 seasoning cube",
+      "Salt & pepper to taste",
+      "1 egg (for glazing)"
+    ],
+    "instructions": [
+      "Mix flour, salt, baking powder, and butter until crumbly. Add water to form dough.",
+      "For filling, fry onions, add beef, potatoes, carrots, seasoning, salt, and pepper. Cook until tender.",
+      "Roll dough, cut circles, fill, and seal edges.",
+      "Brush with egg wash and bake at 180°C for 25–30 minutes."
+    ]
   },
   {
     "id": 6,
     "title": "Party Salad",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/salad recipe.svg"
+    "summary": "A colorful Nigerian layered salad with mayonnaise dressing — popular at events.",
+   "image": "buka-stew.jpg",
+    "ingredients": [
+      "2 cups shredded cabbage",
+      "1 cup grated carrots",
+      "1 cup diced cucumber",
+      "1 cup boiled pasta or macaroni",
+      "1 cup boiled sweet corn",
+      "½ cup mayonnaise",
+      "2 tbsp condensed milk (optional)",
+      "1 boiled egg (sliced)"
+    ],
+    "instructions": [
+      "Arrange cabbage, carrots, cucumber, pasta, and sweet corn in layers.",
+      "Mix mayonnaise with condensed milk for dressing.",
+      "Top salad with sliced boiled egg. Chill before serving."
+    ]
   },
   {
     "id": 7,
-    "title": "Efo Elegusi (Egusi Soup)",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/egusi.svg"
+    "title": "Efo Elegusi",
+    "summary": "A Nigerian melon seed (egusi) and spinach stew — rich, nutty, and common in Yoruba cuisine.",
+   "image": "buka-stew.jpg",
+    "ingredients": [
+      "1 cup ground melon seeds (egusi)",
+      "500g spinach (ugu or efo shoko)",
+      "4 tomatoes",
+      "3 red bell peppers",
+      "2 scotch bonnet peppers",
+      "2 medium onions",
+      "½ cup palm oil",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend peppers, tomatoes, and onions; boil until thick.",
+      "Heat palm oil, fry egusi paste until crumbly.",
+      "Add pepper mix, seasoning, and salt; simmer.",
+      "Add spinach and cook for 3–5 minutes."
+    ]
   },
   {
     "id": 8,
     "title": "Fried Rice",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/fried rice.svg"
+    "summary": "A colorful Nigerian rice dish stir-fried with vegetables, liver, or shrimp — a party favorite.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "3 cups parboiled rice",
+      "½ cup vegetable oil",
+      "2 cups mixed vegetables",
+      "200g diced liver or shrimp",
+      "1 tsp curry powder",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Boil rice in chicken stock with curry and seasoning until done.",
+      "Heat oil, stir-fry liver/shrimp, then add vegetables.",
+      "Add rice and stir-fry for 5–7 minutes."
+    ]
   },
   {
     "id": 9,
-    "title": "Okro Soup",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/okro.svg"
+    "title": "Okro Soup Recipe",
+    "summary": "A slimy, nutritious Nigerian soup made from okra pods, often eaten with fufu or eba.",
+   "image": "buka-stew.jpg",
+    "ingredients": [
+      "500g okra (chopped)",
+      "500g assorted meats and fish",
+      "1 cup palm oil",
+      "2 tbsp ground crayfish",
+      "2 scotch bonnet peppers",
+      "1 onion",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Cook meats and fish with seasoning until tender.",
+      "Add palm oil, crayfish, peppers, and onions to stock.",
+      "Stir in chopped okra and cook for 5–7 minutes."
+    ]
   },
   {
     "id": 10,
     "title": "Peppered Chicken",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/chicken pepper.svg"
+    "summary": "Fried or grilled chicken tossed in a spicy Nigerian pepper sauce — perfect for parties.",
+   "image": "buka-stew.jpg",
+    "ingredients": [
+      "1kg chicken pieces",
+      "4 red bell peppers",
+      "2 scotch bonnet peppers",
+      "1 onion",
+      "½ cup vegetable oil",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Season and boil chicken until tender. Fry or grill until golden.",
+      "Blend peppers and onion; fry in oil with seasoning and salt.",
+      "Toss chicken in pepper sauce until coated."
+    ]
   },
   {
     "id": 11,
     "title": "Fried Pepper Stew",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/atadindin.svg"
+    "summary": "A deeply fried Nigerian tomato-pepper sauce served with rice, yam, or plantain.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "8 tomatoes",
+      "4 red bell peppers",
+      "2 scotch bonnet peppers",
+      "1 onion",
+      "½ cup vegetable oil",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend tomatoes, peppers, and onion; boil until thick.",
+      "Heat oil, fry mixture for 20–30 minutes until oil separates.",
+      "Add seasoning and salt, stir, and serve."
+    ]
   },
   {
     "id": 12,
     "title": "Gizdodo (Dodo Gizzard)",
-    "summary": "A beloved Nigerian dish made with fresh peppers, tomatoes, and spices, simmered to create a rich, flavorful stew perfect for rice, yam, or plantain.",
-    "image": "src/assets/gizdodo.svg"
+    "summary": "A Nigerian mix of fried plantains and gizzard chunks tossed in spicy pepper sauce.",
+    "image": "buka-stew.jpg",
+    "ingredients": [
+      "500g chicken gizzards (cleaned)",
+      "3 ripe plantains",
+      "3 red bell peppers",
+      "2 scotch bonnet peppers",
+      "1 onion",
+      "½ cup vegetable oil",
+      "2 seasoning cubes",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Boil gizzards with seasoning until tender, then fry lightly.",
+      "Dice and fry plantains until golden.",
+      "Blend peppers and onion; fry in oil with seasoning and salt.",
+      "Toss fried gizzards and plantains in pepper sauce."
+    ]
   }
 ]

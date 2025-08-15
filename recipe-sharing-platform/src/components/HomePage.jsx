@@ -11,7 +11,7 @@ const HomePage = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="bg-orange-500 pt-5 pb-5 text-3xl font-bold text-center mb-8">🍲 Recipe Sharing Platform</h1>
+      <h1 className="bg-orange-500 pt-5 pb-5 text-3xl font-bold text-center mb-8">🍲 Your To Go Recipe Platform</h1>
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="bg-white rounded-lg shadow-md">

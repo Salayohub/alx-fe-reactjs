@@ -29,17 +29,16 @@ const AddRecipeForm = ({ onAddRecipe }) => {
     const newRecipe = {
       id: Date.now(),
       title,
-      summary: steps.substring(0, 100) + "...", // auto-generate summary
+      summary: steps.substring(0, 100) + "...",
       ingredients: ingredients.split("\n").filter(item => item.trim() !== ""),
       instructions: steps.split("\n").filter(item => item.trim() !== ""),
-      image: "default.jpg" // placeholder image name
+      image: "default.jpg"
     };
 
     if (onAddRecipe) {
       onAddRecipe(newRecipe);
     }
 
-    // Reset form
     setTitle("");
     setIngredients("");
     setSteps("");
@@ -48,13 +47,13 @@ const AddRecipeForm = ({ onAddRecipe }) => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-8">
-      <h2 className="text-2xl font-bold mb-6 text-center">Add New Recipe</h2>
+    <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-8 md:p-10">
+      <h2 className="text-2xl font-bold mb-6 text-center md:text-3xl">Add New Recipe</h2>
       <form onSubmit={handleSubmit} className="space-y-5">
         
         {/* Recipe Title */}
-        <div>
-          <label className="block text-gray-700 font-semibold mb-2">Recipe Title</label>
+        <div className="md:flex md:flex-col">
+          <label className="block text-gray-700 font-semibold mb-2 md:text-lg">Recipe Title</label>
           <input
             type="text"
             className={`w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.title ? "border-red-500" : "border-gray-300"}`}
@@ -66,8 +65,8 @@ const AddRecipeForm = ({ onAddRecipe }) => {
         </div>
 
         {/* Ingredients */}
-        <div>
-          <label className="block text-gray-700 font-semibold mb-2">Ingredients (one per line)</label>
+        <div className="md:flex md:flex-col">
+          <label className="block text-gray-700 font-semibold mb-2 md:text-lg">Ingredients (one per line)</label>
           <textarea
             className={`w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-y min-h-[100px] ${errors.ingredients ? "border-red-500" : "border-gray-300"}`}
             value={ingredients}
@@ -78,8 +77,8 @@ const AddRecipeForm = ({ onAddRecipe }) => {
         </div>
 
         {/* Steps */}
-        <div>
-          <label className="block text-gray-700 font-semibold mb-2">Preparation Steps (one per line)</label>
+        <div className="md:flex md:flex-col">
+          <label className="block text-gray-700 font-semibold mb-2 md:text-lg">Preparation Steps (one per line)</label>
           <textarea
             className={`w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-y min-h-[120px] ${errors.steps ? "border-red-500" : "border-gray-300"}`}
             value={steps}
@@ -90,10 +89,10 @@ const AddRecipeForm = ({ onAddRecipe }) => {
         </div>
 
         {/* Submit Button */}
-        <div className="text-center">
+        <div className="text-center md:text-right">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-200 w-full sm:w-auto"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-200 w-full md:w-auto"
           >
             Submit Recipe
           </button>

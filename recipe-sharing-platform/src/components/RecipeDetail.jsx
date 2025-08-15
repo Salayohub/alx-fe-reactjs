@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import recipeData from '../data.json';
 
 const RecipeDetail = () => {
   const { id } = useParams();
-  const recipe = recipeData.find(r => r.id === parseInt(id));
+  const [recipe, setRecipe] = useState(null);
+
+  useEffect(() => {
+    const foundRecipe = recipeData.find(r => r.id === parseInt(id));
+    setRecipe(foundRecipe);
+  }, [id]); // Runs whenever id changes
 
   if (!recipe) {
     return <div className="text-center mt-10 text-red-500">Recipe not found</div>;
@@ -16,7 +21,7 @@ const RecipeDetail = () => {
       
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <img
-          src={`/assets/${recipe.image}`} // ✅ Directly from public folder
+          src={`/assets/${recipe.image}`} // ✅ Now loads from public/assets
           alt={recipe.title}
           className="w-full h-64 object-cover"
         />
@@ -24,7 +29,7 @@ const RecipeDetail = () => {
           <h1 className="text-3xl font-bold mb-4">{recipe.title}</h1>
           <p className="text-gray-700 mb-6">{recipe.summary}</p>
 
-          {/* Ingredients Section */}
+          {/* Ingredients */}
           <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
           <ul className="list-disc list-inside mb-6">
             {recipe.ingredients.map((item, index) => (
@@ -32,7 +37,7 @@ const RecipeDetail = () => {
             ))}
           </ul>
 
-          {/* Instructions Section */}
+          {/* Instructions */}
           <h2 className="text-xl font-semibold mb-2">Instructions</h2>
           <ol className="list-decimal list-inside space-y-2">
             {recipe.instructions.map((step, index) => (

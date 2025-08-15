@@ -10,18 +10,13 @@ const RecipeDetail = () => {
     return <div className="text-center mt-10 text-red-500">Recipe not found</div>;
   }
 
-  // Get local image from assets folder
-  const getImage = (imageName) => {
-    return require(`../assets/${imageName}`);
-  };
-
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <Link to="/" className="text-blue-500 hover:underline mb-4 inline-block">← Back to Recipes</Link>
       
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <img
-          src={getImage(recipe.image)}
+          src={`/assets/${recipe.image}`} // ✅ Directly from public folder
           alt={recipe.title}
           className="w-full h-64 object-cover"
         />

@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Buka Stew Recipe",
     "summary": "Buka stew is a rich, smoky Nigerian tomato-based sauce served in roadside eateries (‘bukas’). Slow-cooked in palm oil with assorted meats, it’s perfect with rice, beans, yam, or plantain.",
-    "image": "buka-stew.svg",
+    "image": "../public/pepper stew.svg",
     "ingredients": [
       "10 large ripe tomatoes",
       "4 red bell peppers (tatashe)",
@@ -29,7 +29,7 @@
     "id": 2,
     "title": "Nigerian Fish Stew",
     "summary": "A hearty Nigerian stew made with fresh or fried fish simmered in spicy tomato sauce. Commonly paired with rice, yam, or plantain.",
-    "image": "buka-stew.jpg",
+    "image": "../public/fish stew.svg",
     "ingredients": [
       "6 medium fish steaks (tilapia, catfish, or mackerel)",
       "8 tomatoes",
@@ -53,7 +53,7 @@
     "id": 3,
     "title": "Efo Riro Recipe",
     "summary": "Efo Riro is a Yoruba-style spinach stew made with pepper sauce, assorted meats, and sometimes stockfish. Best served with pounded yam or rice.",
-    "image": "buka-stew.jpg",
+    "image": "../public/eforiro.svg",
     "ingredients": [
       "500g spinach (or ugu leaves)",
       "6 tomatoes",
@@ -77,7 +77,7 @@
     "id": 4,
     "title": "Party Jollof Rice",
     "summary": "A smoky, rich Nigerian rice dish cooked in tomato-pepper sauce — a must-have at parties.",
-    "image": "buka-stew.jpg",
+    "image": "../public/party jollof.svg",
     "ingredients": [
       "4 cups long-grain parboiled rice",
       "6 tomatoes",
@@ -104,7 +104,7 @@
     "id": 5,
     "title": "Meat Pie Recipe",
     "summary": "Flaky Nigerian pastry filled with minced beef, potatoes, and carrots — perfect as a snack or light meal.",
-    "image": "buka-stew.jpg",
+    "image": "../public/meatpie.svg",
     "ingredients": [
       "500g all-purpose flour",
       "250g margarine or butter",
@@ -130,7 +130,7 @@
     "id": 6,
     "title": "Party Salad",
     "summary": "A colorful Nigerian layered salad with mayonnaise dressing — popular at events.",
-   "image": "buka-stew.jpg",
+   "image": "../public/salad recipe.svg",
     "ingredients": [
       "2 cups shredded cabbage",
       "1 cup grated carrots",
@@ -151,7 +151,7 @@
     "id": 7,
     "title": "Efo Elegusi",
     "summary": "A Nigerian melon seed (egusi) and spinach stew — rich, nutty, and common in Yoruba cuisine.",
-   "image": "buka-stew.jpg",
+   "image": "../public/egusi.svg",
     "ingredients": [
       "1 cup ground melon seeds (egusi)",
       "500g spinach (ugu or efo shoko)",
@@ -174,7 +174,7 @@
     "id": 8,
     "title": "Fried Rice",
     "summary": "A colorful Nigerian rice dish stir-fried with vegetables, liver, or shrimp — a party favorite.",
-    "image": "buka-stew.jpg",
+    "image": "../public/fried rice.svg",
     "ingredients": [
       "3 cups parboiled rice",
       "½ cup vegetable oil",
@@ -194,7 +194,7 @@
     "id": 9,
     "title": "Okro Soup Recipe",
     "summary": "A slimy, nutritious Nigerian soup made from okra pods, often eaten with fufu or eba.",
-   "image": "buka-stew.jpg",
+   "image": "../public/okro.svg",
     "ingredients": [
       "500g okra (chopped)",
       "500g assorted meats and fish",
@@ -215,7 +215,7 @@
     "id": 10,
     "title": "Peppered Chicken",
     "summary": "Fried or grilled chicken tossed in a spicy Nigerian pepper sauce — perfect for parties.",
-   "image": "buka-stew.jpg",
+   "image": "../public/chicken pepper.svg",
     "ingredients": [
       "1kg chicken pieces",
       "4 red bell peppers",
@@ -235,7 +235,7 @@
     "id": 11,
     "title": "Fried Pepper Stew",
     "summary": "A deeply fried Nigerian tomato-pepper sauce served with rice, yam, or plantain.",
-    "image": "buka-stew.jpg",
+    "image": "../public/atadindin.svg",
     "ingredients": [
       "8 tomatoes",
       "4 red bell peppers",
@@ -255,7 +255,7 @@
     "id": 12,
     "title": "Gizdodo (Dodo Gizzard)",
     "summary": "A Nigerian mix of fried plantains and gizzard chunks tossed in spicy pepper sauce.",
-    "image": "buka-stew.jpg",
+    "image": "../public/gizdodo.svg",
     "ingredients": [
       "500g chicken gizzards (cleaned)",
       "3 ripe plantains",

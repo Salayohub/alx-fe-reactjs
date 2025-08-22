@@ -4,22 +4,23 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 // ✅ Validation schema with Yup
-const validationSchema = Yup.object({
+const validationSchema = Yup.object().shape({
   username: Yup.string()
     .min(4, "Username must be at least 4 characters")
     .required("Username is required"),
   email: Yup.string()
     .email("Invalid email address")
-    .required("Email is required"),
+    .required("Email is required"),  // ✅ replaces if (!email)
   password: Yup.string()
     .min(4, "Password must be at least 4 characters")
-    .required("Password is required"),
+    .required("Password is required"), // ✅ replaces if (!password)
 });
 
-function FormikForm() {
-  return (
+
+const FormikForm = () =>(
+  
     <div>
-      <h1>Registration Form (Formik)</h1>
+      <h1>Registration Form Formik</h1>
       <Formik
         initialValues={{ username: "", email: "", password: "" }}
         validationSchema={validationSchema}
@@ -29,7 +30,7 @@ function FormikForm() {
           resetForm(); // clears fields after submit
         }}
       >
-        {() => (
+        {({ errors, touched}) => (
           <Form>
             {/* Username */}
             <div>
@@ -42,7 +43,7 @@ function FormikForm() {
               <ErrorMessage
                 name="username"
                 component="p"
-                style={{ color: "red" }}
+                
               />
             </div>
 
@@ -57,7 +58,7 @@ function FormikForm() {
               <ErrorMessage
                 name="email"
                 component="p"
-                style={{ color: "red" }}
+               
               />
             </div>
 
@@ -72,7 +73,7 @@ function FormikForm() {
               <ErrorMessage
                 name="password"
                 component="p"
-                style={{ color: "red" }}
+              
               />
             </div>
 
@@ -82,7 +83,7 @@ function FormikForm() {
       </Formik>
     </div>
   );
-}
+
 
 
 export default FormikForm;

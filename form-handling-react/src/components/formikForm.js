@@ -5,21 +5,12 @@ import * as Yup from "yup";
 
 
 // ✅ Validation schema with Yup 
-const validationSchema = Yup.object().shape({ 
-    username: Yup.string() 
-    .required("Username is required")
-    .min(4, "Username must be at least 4 characters"),
-     
-    email: Yup.string() 
-    .required("Email is required") // ✅ replaces if (!email)
-    .email("Invalid email address"),
-    
+const validationSchema = Yup.object().shape({
+  username: Yup.string().required("Username is required").min(4, "Username must be at least 4 characters"),
+  email: Yup.string().required("Email is required").email("Invalid email address"),
+  password: Yup.string().required("Password is required").min(4, "Password must be at least 4 characters"),
+});
 
-    password: Yup.string() 
-     .required("Password is required") // ✅ replaces if (!password)
-    .min(4, "Password must be at least 4 characters")
-    
-    }); 
     
     const FormikForm = () =>( 
     <div> 

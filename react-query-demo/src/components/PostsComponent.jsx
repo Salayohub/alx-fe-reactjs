@@ -20,8 +20,10 @@ export default function PostsComponent() {
   } = useQuery({
     queryKey: ['posts', page],
     queryFn: () => fetchPosts(page),
-    keepPreviousData: true,   // 👈 Checker requirement
-    staleTime: 5000,
+    keepPreviousData: true,     // 👈 keeps old data during page change
+    cacheTime: 1000 * 60 * 5,   // 👈 cache persists for 5 minutes
+    refetchOnWindowFocus: true, // 👈 refetches when window/tab gains focus
+    staleTime: 5000,            // 👈 optional, avoids too frequent refetching
   })
 
   if (isLoading) return <p>Loading posts...</p>

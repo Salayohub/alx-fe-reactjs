@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import TodoList from '../components/TodoList'
+import TodoList from './TodoList'
 
 test('renders initial todos', () => {
   render(<TodoList />)
@@ -9,7 +9,7 @@ test('renders initial todos', () => {
 
 test('adds a new todo', () => {
   render(<TodoList />)
-  fireEvent.change(screen.getByPlaceholderText(/add a new todo/i), {
+  fireEvent.change(screen.getByPlaceholderText(/add new todo/i), {
     target: { value: 'Write tests' },
   })
   fireEvent.click(screen.getByText(/add todo/i))
